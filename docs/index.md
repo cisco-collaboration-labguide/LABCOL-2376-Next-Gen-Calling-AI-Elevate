@@ -1,8 +1,13 @@
+<div class="lab-hero">
+  <p class="lab-hero__eyebrow">Cisco Live Melbourne 2026 · Instructor-led Lab</p>
+  <h1>LABCOL-2376</h1>
+  <p class="lab-hero__title">Next Gen Calling AI Elevate with Webex</p>
+  <a class="lab-hero__cta" href="01-access-the-lab/">Get started</a>
+</div>
+
 # Next Gen Calling AI Elevate with Webex
 
-<p class="lab-meta">Cisco Live Melbourne 2026 | LABCOL-2376</p>
-
-This online edition contains the complete hands-on workflow and instructional screenshots from the current lab guide.
+This online edition contains the complete hands-on workflow and every instructional screenshot from the current lab guide.
 
 **Authors:** Hussain Ali and Omer Ilyas, Technical Marketing Engineers
 

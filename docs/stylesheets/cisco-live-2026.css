@@ -21,8 +21,9 @@ body, input { font-family: InterLocal, "Segoe UI", Arial, sans-serif; }
 .md-header__title { font-weight: 700; letter-spacing: -.01em; }
 .md-logo img { height: 1.55rem !important; width: auto !important; }
 .md-tabs { background: var(--cisco-navy); }
-.md-main__inner { margin-top: 0; }
-.md-content__inner { padding-top: 1.2rem; }
+.md-main__inner { margin-top: 1.5rem; max-width: 90rem; }
+.md-content { max-width: 58rem; }
+.md-content__inner { padding-top: .4rem; }
 .md-content__inner > h1 { font-weight: 750; letter-spacing: -.035em; color: var(--cisco-navy); }
 .md-content__inner > h2 {
   color: var(--cisco-navy);
@@ -33,7 +34,7 @@ body, input { font-family: InterLocal, "Segoe UI", Arial, sans-serif; }
   border-bottom: 1px solid var(--cisco-line);
 }
 .md-content__inner > h3 { color: var(--cisco-navy); font-weight: 700; }
-.md-typeset { color: var(--cisco-ink); font-size: .82rem; line-height: 1.7; }
+.md-typeset { color: #202124; font-size: .8rem; line-height: 1.65; }
 .md-typeset a { color: var(--cisco-blue); }
 .md-typeset blockquote {
   background: #eef8fc;
@@ -48,13 +49,13 @@ body, input { font-family: InterLocal, "Segoe UI", Arial, sans-serif; }
 .md-nav__link--active { color: var(--cisco-blue); font-weight: 700; }
 
 .lab-hero {
-  background: var(--cisco-navy) url("../assets/cisco-live-banner.jpg") center top / 100% auto no-repeat;
-  border-radius: 0 0 1.1rem 1.1rem;
+  background: var(--cisco-navy) url("../assets/source-guide/image2.jpg") center top / 100% auto no-repeat;
+  border-radius: 0;
   color: white;
   margin: -1.2rem -1.2rem 2rem;
-  min-height: 26rem;
+  min-height: 22rem;
   overflow: hidden;
-  padding: 8.2rem 3rem 2.8rem;
+  padding: 7rem 3rem 2.8rem;
   position: relative;
 }
 .lab-hero::after {
@@ -71,6 +72,7 @@ body, input { font-family: InterLocal, "Segoe UI", Arial, sans-serif; }
 .lab-hero__meta { align-items: center; display: flex; flex-wrap: wrap; gap: .45rem 1.2rem; }
 .lab-hero__meta strong { color: white; font-size: 1.05rem; }
 .lab-hero__meta span { color: #c6d8e8; font-size: .78rem; }
+.lab-hero__title { color: white; font-size: 1.45rem; font-weight: 650; max-width: 34rem; }
 .md-typeset .lab-hero__cta {
   background: var(--cisco-cyan);
   border-radius: 2rem;
@@ -100,28 +102,35 @@ body, input { font-family: InterLocal, "Segoe UI", Arial, sans-serif; }
 .module-grid small { color: var(--cisco-muted); margin-top: .12rem; }
 
 .lab-figure {
-  background: var(--cisco-soft);
-  border: 1px solid var(--cisco-line);
-  border-radius: .75rem;
-  margin: 1.35rem 0 1.7rem;
+  background: white;
+  border: 0;
+  margin: 1.35rem 0 2.2rem;
   overflow: hidden;
-  padding: .7rem;
+  padding: 0;
 }
 .lab-figure img {
   background: white;
-  border-radius: .4rem;
+  border: 1px solid #d8dee4;
+  border-radius: .2rem;
   display: block;
   height: auto;
   margin: 0 auto;
   max-width: 100%;
+  box-shadow: 0 2px 10px rgba(7,27,51,.08);
 }
 .lab-figure figcaption {
   color: var(--cisco-muted);
   font-size: .7rem;
   line-height: 1.45;
-  padding: .65rem .25rem .1rem;
+  padding: .55rem .25rem .1rem;
   text-align: center;
 }
+
+.md-typeset ol { counter-reset: labstep; }
+.md-typeset ol > li { margin-bottom: .75rem; }
+.md-typeset ol > li::marker { font-size: 1.05em; }
+.md-typeset .admonition { border-radius: .25rem; box-shadow: 0 1px 4px rgba(7,27,51,.12); }
+.md-footer { background: var(--cisco-navy); }
 
 @media screen and (max-width: 44.984rem) {
   .lab-hero { margin-left: -.8rem; margin-right: -.8rem; min-height: 23rem; padding: 6.8rem 1.35rem 2rem; }

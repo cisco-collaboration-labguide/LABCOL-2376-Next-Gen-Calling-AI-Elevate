@@ -34,6 +34,30 @@ In this module there are sub modules that are CLI (Command Line Interface) based
 3. Wait while the script executes. The PowerShell window closes automatically when it finishes.
 4. Confirm that `CL_LGW_Config-Ready.txt` appears on the desktop, then double-click it to open the generated CUBE configuration.
 
+### Confirm that the trunk was added
+
+The PowerShell script performs the **Add Trunk** operation in Control Hub and generates the matching CUBE configuration. Do not create a second trunk manually.
+
+1. In Control Hub, go to **Services > PSTN & Routing > Gateway Configurations > Trunk**.
+2. Confirm that the new registration-based trunk, normally named `dCloud-Auto`, appears.
+3. The trunk can remain **Offline** until you paste the generated configuration into the LGW and registration completes.
+4. If the trunk or `CL_LGW_Config-Ready.txt` is missing, stop and check the PowerShell output before continuing.
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image29.png" alt="Run the CL Add Trunk PowerShell script">
+  <figcaption>Run the supplied script; it creates the Control Hub trunk and generates the matching LGW configuration.</figcaption>
+</figure>
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image30.png" alt="PowerShell trunk creation output">
+  <figcaption>Wait for the automated trunk creation and configuration generation to finish.</figcaption>
+</figure>
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image31.png" alt="Generated Local Gateway configuration file">
+  <figcaption>Open the generated configuration file before connecting to the LGW.</figcaption>
+</figure>
+
 ### Connect to the LGW with PuTTY
 
 1. Open **PuTTY** from the Workstation 1 taskbar or desktop.
@@ -78,11 +102,21 @@ Before we start to test the Local Gateway configuration, verify that the premise
 
 Navigate to Services > PSTN & Routing > Gateway Configuration > Trunk. Select the trunk that was added in the above module. On the fly-out window under Details click Trunk Info/Manage.
 
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image32.png" alt="Navigate to Services &gt; PSTN &amp; Routing &gt; Gateway Configuration &gt; Trunk. Select the trunk that was added in the above module. On the fly-out window under Details click Trunk Info/Man">
+  <figcaption>Source guide screenshot 32. Use the values assigned to your own lab pod.</figcaption>
+</figure>
+
 Ensure the status in Control Hub shows Online as displayed above. If the status does not show online, it means that there is some configuration issue. You will need to verify your Voice Class Tenant and SIP profiles on the vCUBE platform.
 
 Once you have verified that the trunk status is online, you can assign this trunk directly to a location or create a Route Group with that trunk and assign the Route Group to a location. Creating a Route Group with a trunk and assigning it to a location helps to have multiple trunks in a route group and in production environments, it avoids service disruptions.
 
 Let's create a Route Group, Go to SERVICES > PSTN & Routing > Gateway Configuration > Route Group tab. Select Create Route Group.
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image33.png" alt="Let&#x27;s create a Route Group, Go to SERVICES &gt; PSTN &amp; Routing &gt; Gateway Configuration &gt; Route Group tab. Select Create Route Group.">
+  <figcaption>Source guide screenshot 33. Use the values assigned to your own lab pod.</figcaption>
+</figure>
 
 It will bring up a new pop-up window to create a new Route Group. On the pop-up window populate the following and click Save.
 
@@ -103,6 +137,11 @@ It will create the new Route Group dCloud-RG with the trunk.
   <figcaption>Source guide screenshot 35. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image36.png" alt="Now we can assign this Route Group to the location. Click Locations (hyperlink) on the pop-up window. Select the dCloud location under available locations. On the dCloud location p">
+  <figcaption>Source guide screenshot 36. Use the values assigned to your own lab pod.</figcaption>
+</figure>
+
 On the following page drop down the option for Routing Choice and choose the Route Group you defined. In this lab guide, it's named: dCloud-RG. Checkmark the option to confirm that you understand the impact of these changes. Also notice that as soon as you select the route group from the list, it displays the trunks in that Route Group. Click Next. Click Done (add numbers later) on the following page.
 
 <figure class="lab-figure">
@@ -113,6 +152,11 @@ On the following page drop down the option for Routing Choice and choose the Rou
 Now just to make sure the trunk is assigned to the location, go to SERVICES > PSTN & Routing > Gateway Configuration > Trunk
 
 Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route group In Use.
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image38.png" alt="Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route">
+  <figcaption>Source guide screenshot 38. Use the values assigned to your own lab pod.</figcaption>
+</figure>
 
 <figure class="lab-figure">
   <img src="../assets/source-guide/image39.png" alt="Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route">

@@ -4,13 +4,23 @@
 
 Click on the Details from the dCloud eXPO page and use the Host, Username and Password to connect using Cisco Secure Client (formerly AnyConnect) to your dedicated dCloud session.
 
-Record the Host, Username, Password, and Session ID displayed for your assigned session.
+Also note your session ID as displayed below. In the example below, following are the details.
 
-AnyConnect (Cisco Secure Client) Host: use the host shown in your session details.
+AnyConnect (Cisco Secure Client) Host: https://dcloud-syd-anyconnect.cisco.com
 
-AnyConnect (Cisco Secure Client) Username: use the username shown in your session details.
+AnyConnect (Cisco Secure Client) Username: v2384user1
 
-AnyConnect (Cisco Secure Client) Password: use the password shown in your session details.
+AnyConnect (Cisco Secure Client) Password: f001db
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image4.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
+  <figcaption>Source guide screenshot 4. Use the values assigned to your own lab pod.</figcaption>
+</figure>
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image5.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
+  <figcaption>Source guide screenshot 5. Use the values assigned to your own lab pod.</figcaption>
+</figure>
 
 Continue to next step after connecting to the pod via the Cisco Secure Client.
 
@@ -19,11 +29,21 @@ Continue to next step after connecting to the pod via the Cisco Secure Client.
 Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect
 
 <figure class="lab-figure">
+  <img src="../assets/source-guide/image6.png" alt="Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect">
+  <figcaption>Source guide screenshot 6. Use the values assigned to your own lab pod.</figcaption>
+</figure>
+
+<figure class="lab-figure">
   <img src="../assets/source-guide/image7.png" alt="Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect">
   <figcaption>Source guide screenshot 7. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 Within Workstation 1’s Desktop, there will be a file named WEBEX_PASSWORD.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaboration Control Hub for this lab.
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image8.png" alt="Within Workstation 1’s Desktop, there will be a file named WEBEX_PASSWORD.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaborati">
+  <figcaption>Source guide screenshot 8. Use the values assigned to your own lab pod.</figcaption>
+</figure>
 
 ## Login to Collaboration Control Hub from within Workstation 1
 
@@ -35,13 +55,18 @@ Now you can proceed with the lab modules.
 
 Before we can proceed to login to Collaboration Control Hub, we need the DNS name, username, password, and session ID. Within the session details page, select DNS Address and copy the top level FQDN as displayed below. In the example below:
 
-DNS Address / FQDN of your Webex organization: use the top-level FQDN shown for your assigned pod.
+DNS Address / FQDN of our Webex organization: cb120.dc-08.com
 
-Session ID: use the ID shown in your session details.
+Session ID: 326435
 
-Control Hub Username: cholland@&lt;FQDN&gt;, using your assigned top-level FQDN.
+Control Hub Username: cholland@&lt;FQDN&gt; above. In our example, it will be cholland@cb120.dc-08.com
 
-Control Hub Password: dCloud + the last 4 digits of your Session ID + !
+Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud6435!
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image9.png" alt="Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud6435!">
+  <figcaption>Source guide screenshot 9. Use the values assigned to your own lab pod.</figcaption>
+</figure>
 
 1) On your PC, open Chrome browser and navigate to https://admin.webex.com
 

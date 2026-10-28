@@ -10,6 +10,8 @@ theme:
     accent: cyan
   features:
     - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.tracking
@@ -30,9 +32,12 @@ extra_css:
 extra:
   generator: false
 nav:
-  - Overview: index.md
-  - Access the lab: 01-access-the-lab.md
-  - Webex Calling organization: 02-webex-calling-org.md
-  - Local Gateway: 03-local-gateway.md
-  - Captions and transcripts: 04-captions-transcripts.md
-  - Recording summaries: 05-recording-summaries.md
+  - Home: index.md
+  - Getting Started:
+      - Lab Overview: index.md
+      - Access your Lab Environment: 01-access-the-lab.md
+  - Webex Calling AI:
+      - Set up the Webex Calling organization: 02-webex-calling-org.md
+      - Configure the Local Gateway: 03-local-gateway.md
+      - Test captions and transcripts: 04-captions-transcripts.md
+      - Test recording summaries: 05-recording-summaries.md

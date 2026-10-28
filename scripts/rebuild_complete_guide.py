@@ -30,60 +30,8 @@ PAGE_RANGES = {
 
 BULLET_PARAGRAPHS = {25, 26, 260, 261, 262, 363, 364, 367}
 SKIP_PARAGRAPHS = {29}
-OMIT_IMAGES = {
-    "image4.png",   # old LABCOL-2416 session ID and VPN credentials
-    "image5.png",   # example VPN username
-    "image6.png",   # old LABCOL-2416 topology credentials
-    "image8.png",   # Webex password and admin address
-    "image9.png",   # old LABCOL-2416 session ID and DNS names
-    "image10.png",  # credential-file icon adds no instructional detail
-    "image11.png",  # Webex password and admin address
-    "image17.png",  # bulk list of example phone numbers
-    "image18.png",  # location street address
-    "image19.png",  # location identifier
-    "image20.png",  # phone number and organization domain
-    "image21.png",  # phone number and location identifier
-    "image22.png",  # identifiable profile photo and meeting domain
-    "image23.png",  # user email and account URL identifier
-    "image24.png",  # user email and phone numbers
-    "image25.png",  # identifiable profile photo and meeting domain
-    "image29.png",  # duplicated by the reviewed Local Gateway figure
-    "image30.png",  # duplicated by the reviewed Local Gateway figure
-    "image31.png",  # duplicated by the reviewed Local Gateway figure
-    "image32.png",  # registrar domain, trunk identifier, and profile photo
-    "image33.png",  # organization identifier
-    "image36.png",  # phone number and location identifier
-    "image38.png",  # identifiable profile photo
-    "image40.png",  # user email, phone number, and profile photo
-    "image41.png",  # identifiable profile photo
-    "image42.png",  # organization domain and profile photo
-    "image43.png",  # identifiable profile photo
-    "image45.png",  # identifiable profile photo and call number
-    "image46.png",  # identifiable profile photo and phone number
-    "image47.png",  # dialable call number
-    "image48.png",  # dialable call number
-    "image49.png",  # dialable call number
-    "image50.png",  # identifiable profile photo
-    "image51.png",  # user email, organization domain, and profile photo
-    "image52.png",  # pod-specific DID mapping
-    "image53.jpeg", # decorative inline icon
-    "image54.png",  # user phone number and profile photo
-    "image55.jpeg", # decorative inline icon
-    "image56.png",  # user phone number and profile photo
-    "image57.jpeg", # decorative inline icon
-    "image58.png",  # recorded call number
-    "image59.png",  # call number and identifiable profile photo
-}
-SAFE_TEXT_REPLACEMENTS = {
-    33: "Record the Host, Username, Password, and Session ID displayed for your assigned session.",
-    34: "AnyConnect (Cisco Secure Client) Host: use the host shown in your session details.",
-    35: "AnyConnect (Cisco Secure Client) Username: use the username shown in your session details.",
-    36: "AnyConnect (Cisco Secure Client) Password: use the password shown in your session details.",
-    64: "DNS Address / FQDN of your Webex organization: use the top-level FQDN shown for your assigned pod.",
-    66: "Session ID: use the ID shown in your session details.",
-    68: "Control Hub Username: cholland@&lt;FQDN&gt;, using your assigned top-level FQDN.",
-    70: "Control Hub Password: dCloud + the last 4 digits of your Session ID + !",
-}
+OMIT_IMAGES: set[str] = set()
+SAFE_TEXT_REPLACEMENTS: dict[int, str] = {}
 
 
 def clean(text: str) -> str:
@@ -105,8 +53,6 @@ def image_names(document: Document, paragraph) -> list[str]:
 
 
 def extract_images(document: Document) -> None:
-    if ASSETS.exists():
-        shutil.rmtree(ASSETS)
     ASSETS.mkdir(parents=True, exist_ok=True)
     with ZipFile(SOURCE) as archive:
         for paragraph in document.paragraphs:
@@ -148,6 +94,30 @@ PUTTY_BLOCK = """### Generate the Local Gateway configuration
 
 3. Wait while the script executes. The PowerShell window closes automatically when it finishes.
 4. Confirm that `CL_LGW_Config-Ready.txt` appears on the desktop, then double-click it to open the generated CUBE configuration.
+
+### Confirm that the trunk was added
+
+The PowerShell script performs the **Add Trunk** operation in Control Hub and generates the matching CUBE configuration. Do not create a second trunk manually.
+
+1. In Control Hub, go to **Services > PSTN & Routing > Gateway Configurations > Trunk**.
+2. Confirm that the new registration-based trunk, normally named `dCloud-Auto`, appears.
+3. The trunk can remain **Offline** until you paste the generated configuration into the LGW and registration completes.
+4. If the trunk or `CL_LGW_Config-Ready.txt` is missing, stop and check the PowerShell output before continuing.
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image29.png" alt="Run the CL Add Trunk PowerShell script">
+  <figcaption>Run the supplied script; it creates the Control Hub trunk and generates the matching LGW configuration.</figcaption>
+</figure>
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image30.png" alt="PowerShell trunk creation output">
+  <figcaption>Wait for the automated trunk creation and configuration generation to finish.</figcaption>
+</figure>
+
+<figure class="lab-figure">
+  <img src="../assets/source-guide/image31.png" alt="Generated Local Gateway configuration file">
+  <figcaption>Open the generated configuration file before connecting to the LGW.</figcaption>
+</figure>
 
 ### Connect to the LGW with PuTTY
 
@@ -241,8 +211,6 @@ def render_page(document: Document, filename: str, start: int, end: int) -> str:
                 lines.extend([text, ""])
 
         for name in images:
-            if name in {"image29.png", "image30.png", "image31.png"} and filename == "03-local-gateway.md":
-                continue
             lines.extend([figure(name, last_context).rstrip(), ""])
 
     title_prefix = "" if filename == "index.md" else ""
@@ -250,11 +218,16 @@ def render_page(document: Document, filename: str, start: int, end: int) -> str:
 
 
 def add_index_front_matter(body: str) -> str:
-    header = """# Next Gen Calling AI Elevate with Webex
+    header = """<div class="lab-hero">
+  <p class="lab-hero__eyebrow">Cisco Live Melbourne 2026 · Instructor-led Lab</p>
+  <h1>LABCOL-2376</h1>
+  <p class="lab-hero__title">Next Gen Calling AI Elevate with Webex</p>
+  <a class="lab-hero__cta" href="01-access-the-lab/">Get started</a>
+</div>
 
-<p class="lab-meta">Cisco Live Melbourne 2026 | LABCOL-2376</p>
+# Next Gen Calling AI Elevate with Webex
 
-This online edition contains the complete hands-on workflow and instructional screenshots from the current lab guide.
+This online edition contains the complete hands-on workflow and every instructional screenshot from the current lab guide.
 
 **Authors:** Hussain Ali and Omer Ilyas, Technical Marketing Engineers
 
