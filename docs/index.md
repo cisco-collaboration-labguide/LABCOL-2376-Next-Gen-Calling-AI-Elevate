@@ -1,5 +1,5 @@
 <div class="lab-hero">
-  <p class="lab-hero__eyebrow">Cisco Live Melbourne 2026 · Instructor-led Lab</p>
+  <p class="lab-hero__eyebrow">Cisco Live Melbourne 2026 · Hands-on lab</p>
   <h1>LABCOL-2376</h1>
   <p class="lab-hero__title">Next Gen Calling AI Elevate with Webex</p>
   <a class="lab-hero__cta" href="01-access-the-lab/">Get started</a>
