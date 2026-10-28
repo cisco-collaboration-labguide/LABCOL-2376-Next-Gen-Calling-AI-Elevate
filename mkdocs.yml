@@ -1,27 +1,41 @@
-site_name: Next Gen Calling AI Elevate with Webex
+site_name: LABCOL-2376 · Next-Gen Calling AI-Elevate
 site_description: Cisco Live Melbourne 2026 LABCOL-2376 lab guide
+site_url: https://cisco-collaboration-labguide.github.io/LABCOL-2376-Next-Gen-Calling-AI-Elevate/
+repo_url: https://github.com/cisco-collaboration-labguide/LABCOL-2376-Next-Gen-Calling-AI-Elevate
+edit_uri: edit/main/docs/
 theme:
   name: material
   logo: assets/cisco-live-logo.png
   favicon: assets/cisco-live-logo.png
   font: false
   palette:
-    primary: custom
-    accent: cyan
+    - scheme: default
+      primary: custom
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
-    - navigation.instant
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.indexes
     - navigation.tracking
     - navigation.footer
     - navigation.top
-    - toc.follow
+    - toc.integrate
     - search.highlight
     - search.suggest
+    - content.action.edit
     - content.code.copy
+plugins:
+  - search
 markdown_extensions:
+  - attr_list
   - admonition
   - sane_lists
   - tables
@@ -29,6 +43,8 @@ markdown_extensions:
       permalink: true
 extra_css:
   - stylesheets/cisco-live-2026.css
+extra_javascript:
+  - javascripts/screenshots.js
 extra:
   generator: false
 nav:
@@ -41,3 +57,4 @@ nav:
       - Configure the Local Gateway: 03-local-gateway.md
       - Test captions and transcripts: 04-captions-transcripts.md
       - Test recording summaries: 05-recording-summaries.md
+use_directory_urls: false
