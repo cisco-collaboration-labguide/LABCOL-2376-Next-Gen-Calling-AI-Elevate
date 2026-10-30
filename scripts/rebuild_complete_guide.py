@@ -243,9 +243,6 @@ hide:
 <a class="journey-card" href="02-webex-calling-org.html"><span class="card-number">02</span><h3>Build the calling foundation</h3><p>Configure the Webex Calling organization, phone numbers, users, and the registration-based Local Gateway.</p><span>Organization and gateway →</span></a>
 <a class="journey-card" href="04-captions-transcripts.html"><span class="card-number">03</span><h3>Experience Calling AI</h3><p>Test live captions, call transcripts, recording, and AI-generated recording summaries.</p><span>Captions and summaries →</span></a>
 </div>
-
-## Webex Calling AI Overview
-
 """
     body = re.sub(r"^# Webex Calling AI Overview\s*", "", body)
     return header + body
@@ -257,7 +254,15 @@ def main() -> None:
     for filename, (start, end) in PAGE_RANGES.items():
         content = render_page(document, filename, start, end)
         if filename == "index.md":
-            content = add_index_front_matter(content)
+            overview = re.sub(
+                r"^# Webex Calling AI Overview",
+                "# Lab overview",
+                content,
+                count=1,
+            )
+            (DOCS / "00-lab-overview.md").write_text(overview, encoding="utf-8")
+            print("Wrote 00-lab-overview.md")
+            content = add_index_front_matter("")
         (DOCS / filename).write_text(content, encoding="utf-8")
         print(f"Wrote {filename}")
 

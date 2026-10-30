@@ -21,14 +21,3 @@ hide:
 <a class="journey-card" href="02-webex-calling-org.html"><span class="card-number">02</span><h3>Build the calling foundation</h3><p>Configure the Webex Calling organization, phone numbers, users, and the registration-based Local Gateway.</p><span>Organization and gateway →</span></a>
 <a class="journey-card" href="04-captions-transcripts.html"><span class="card-number">03</span><h3>Experience Calling AI</h3><p>Test live captions, call transcripts, recording, and AI-generated recording summaries.</p><span>Captions and summaries →</span></a>
 </div>
-
-## Webex Calling AI Overview
-
-In this lab, you will enable the Artificial Intelligence (AI) features for Webex Calling. As AI continues to redefine the modern workplace, this part of the lab is designed to show you how these technologies fundamentally transform collaboration, communication, and customer interactions.
-
-You will explore how Webex AI empowers administrators with better oversight, enriches employee productivity through smarter workflows, and delights customers with more personalized experiences.
-
-You will gain practical, "hands-on" experience in the following areas:
-
-- Administration: Enabling the Cisco AI Assistant in Control Hub for Webex Calling for advanced AI capabilities for admins, callers and users.
-- Communication: Leveraging AI-powered Webex Calling features, including live transcriptions, and closed captions (CC).
