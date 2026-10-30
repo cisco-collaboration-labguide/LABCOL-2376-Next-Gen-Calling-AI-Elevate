@@ -76,8 +76,8 @@ def figure(name: str, context: str) -> str:
     label = f"Source guide screenshot {number.group(0)}" if number else "Source guide screenshot"
     return (
         '<figure class="lab-figure">\n'
-        f'  <a class="screenshot-link" href="../assets/source-guide/{name}">\n'
-        f'    <img class="lab-screenshot" src="../assets/source-guide/{name}" alt="{alt}">\n'
+        f'  <a class="screenshot-link" href="assets/source-guide/{name}">\n'
+        f'    <img class="lab-screenshot" src="assets/source-guide/{name}" alt="{alt}">\n'
         '  </a>\n'
         f"  <figcaption>{label}. Use the values assigned to your own lab pod.</figcaption>\n"
         "</figure>\n"
@@ -90,7 +90,7 @@ PUTTY_BLOCK = """### Generate the Local Gateway configuration
 2. Right-click the file and select **Run with PowerShell**.
 
 <figure class="lab-figure">
-  <img src="../assets/local-gateway/01-run-trunk-script.png" alt="Right-click CL_Add_Trunk.ps1 and select Run with PowerShell">
+  <img src="assets/local-gateway/01-run-trunk-script.png" alt="Right-click CL_Add_Trunk.ps1 and select Run with PowerShell">
   <figcaption>Run the trunk-creation script from the Workstation 1 desktop.</figcaption>
 </figure>
 
@@ -107,17 +107,17 @@ The PowerShell script performs the **Add Trunk** operation in Control Hub and ge
 4. If the trunk or `CL_LGW_Config-Ready.txt` is missing, stop and check the PowerShell output before continuing.
 
 <figure class="lab-figure">
-  <img src="../assets/source-guide/image29.png" alt="Run the CL Add Trunk PowerShell script">
+  <img src="assets/source-guide/image29.png" alt="Run the CL Add Trunk PowerShell script">
   <figcaption>Run the supplied script; it creates the Control Hub trunk and generates the matching LGW configuration.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <img src="../assets/source-guide/image30.png" alt="PowerShell trunk creation output">
+  <img src="assets/source-guide/image30.png" alt="PowerShell trunk creation output">
   <figcaption>Wait for the automated trunk creation and configuration generation to finish.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <img src="../assets/source-guide/image31.png" alt="Generated Local Gateway configuration file">
+  <img src="assets/source-guide/image31.png" alt="Generated Local Gateway configuration file">
   <figcaption>Open the generated configuration file before connecting to the LGW.</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ The PowerShell script performs the **Add Trunk** operation in Control Hub and ge
 4. You may ignore only the final save error shown after `copy run start`; do not ignore errors from the configuration commands.
 
 <figure class="lab-figure">
-  <img src="../assets/local-gateway/02-paste-lgw-config.png" alt="Generated LGW configuration selected in Notepad and pasted into an authenticated PuTTY session">
+  <img src="assets/local-gateway/02-paste-lgw-config.png" alt="Generated LGW configuration selected in Notepad and pasted into an authenticated PuTTY session">
   <figcaption>Copy the complete generated configuration and paste it into the authenticated LGW session. This supplied screenshot shows a sample pod address; use your assigned address.</figcaption>
 </figure>
 
@@ -153,7 +153,7 @@ The PowerShell script performs the **Add Trunk** operation in Control Hub and ge
 3. In the command output, confirm that the **reg** column reports `yes`. If it does not, recheck the pasted Voice Class Tenant and SIP profile configuration before continuing.
 
 <figure class="lab-figure">
-  <img src="../assets/local-gateway/03-verify-registration.png" alt="Output of show sip-ua register status with the registration status highlighted as yes">
+  <img src="assets/local-gateway/03-verify-registration.png" alt="Output of show sip-ua register status with the registration status highlighted as yes">
   <figcaption>The LGW is registered when the <strong>reg</strong> column shows <code>yes</code>.</figcaption>
 </figure>
 

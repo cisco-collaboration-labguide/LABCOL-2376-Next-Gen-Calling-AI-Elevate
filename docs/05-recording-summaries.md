@@ -10,8 +10,8 @@ First, we will enable call recording at the user level, for the user Charles Hol
 
 1. Go to Management > Users > select Charles Holland. Then go to Calling > User Call Experience > Call recording.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image50.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image50.png" alt="Go to Management &gt; Users &gt; select Charles Holland. Then go to Calling &gt; User Call Experience &gt; Call recording.">
+  <a class="screenshot-link" href="assets/source-guide/image50.png">
+    <img class="lab-screenshot" src="assets/source-guide/image50.png" alt="Go to Management &gt; Users &gt; select Charles Holland. Then go to Calling &gt; User Call Experience &gt; Call recording.">
   </a>
   <figcaption>Source guide screenshot 50. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -19,8 +19,8 @@ First, we will enable call recording at the user level, for the user Charles Hol
 2. Turn on call recording with the settings shown below.
 3. Turn on Generate Transcript.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image51.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image51.png" alt="Turn on Generate Transcript.">
+  <a class="screenshot-link" href="assets/source-guide/image51.png">
+    <img class="lab-screenshot" src="assets/source-guide/image51.png" alt="Turn on Generate Transcript.">
   </a>
   <figcaption>Source guide screenshot 51. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -32,8 +32,8 @@ First, we will enable call recording at the user level, for the user Charles Hol
 3. Note: This number will be unique for your pod. Do not dial the number displayed in the screenshot here.
 4. Note: If your cell phone is from outside of Australia, then replace the ‘0’ with “+61”. For example, from a US cell phone number, instead of dialing “02 9173 8088”, dial “+61 2 9173 8088”
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image52.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image52.png" alt="Note: If your cell phone is from outside of Australia, then replace the ‘0’ with “+61”. For example, from a US cell phone number, instead of dialing “02 9173 8088”, dial “+61 2 917">
+  <a class="screenshot-link" href="assets/source-guide/image52.png">
+    <img class="lab-screenshot" src="assets/source-guide/image52.png" alt="Note: If your cell phone is from outside of Australia, then replace the ‘0’ with “+61”. For example, from a US cell phone number, instead of dialing “02 9173 8088”, dial “+61 2 917">
   </a>
   <figcaption>Source guide screenshot 52. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -46,30 +46,30 @@ Want to catch up on the discussion that happened in a call? When enabled by your
 
 1. From the Webex App, click Calling, and then go to Recordings.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image53.jpeg">
-    <img class="lab-screenshot" src="../assets/source-guide/image53.jpeg" alt="From the Webex App, click Calling, and then go to Recordings.">
+  <a class="screenshot-link" href="assets/source-guide/image53.jpeg">
+    <img class="lab-screenshot" src="assets/source-guide/image53.jpeg" alt="From the Webex App, click Calling, and then go to Recordings.">
   </a>
   <figcaption>Source guide screenshot 53. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image54.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image54.png" alt="From the Webex App, click Calling, and then go to Recordings.">
+  <a class="screenshot-link" href="assets/source-guide/image54.png">
+    <img class="lab-screenshot" src="assets/source-guide/image54.png" alt="From the Webex App, click Calling, and then go to Recordings.">
   </a>
   <figcaption>Source guide screenshot 54. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 2. Hover over a recording and click to open the recording player, and see the full AI-generated summary, with notes, and action items.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image55.jpeg">
-    <img class="lab-screenshot" src="../assets/source-guide/image55.jpeg" alt="Hover over a recording and click to open the recording player, and see the full AI-generated summary, with notes, and action items.">
+  <a class="screenshot-link" href="assets/source-guide/image55.jpeg">
+    <img class="lab-screenshot" src="assets/source-guide/image55.jpeg" alt="Hover over a recording and click to open the recording player, and see the full AI-generated summary, with notes, and action items.">
   </a>
   <figcaption>Source guide screenshot 55. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image56.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image56.png" alt="Hover over a recording and click to open the recording player, and see the full AI-generated summary, with notes, and action items.">
+  <a class="screenshot-link" href="assets/source-guide/image56.png">
+    <img class="lab-screenshot" src="assets/source-guide/image56.png" alt="Hover over a recording and click to open the recording player, and see the full AI-generated summary, with notes, and action items.">
   </a>
   <figcaption>Source guide screenshot 56. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -79,23 +79,23 @@ Want to catch up on the discussion that happened in a call? When enabled by your
 —AI summary, notes, and action items.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image57.jpeg">
-    <img class="lab-screenshot" src="../assets/source-guide/image57.jpeg" alt="—AI summary, notes, and action items.">
+  <a class="screenshot-link" href="assets/source-guide/image57.jpeg">
+    <img class="lab-screenshot" src="assets/source-guide/image57.jpeg" alt="—AI summary, notes, and action items.">
   </a>
   <figcaption>Source guide screenshot 57. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image58.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image58.png" alt="—AI summary, notes, and action items.">
+  <a class="screenshot-link" href="assets/source-guide/image58.png">
+    <img class="lab-screenshot" src="assets/source-guide/image58.png" alt="—AI summary, notes, and action items.">
   </a>
   <figcaption>Source guide screenshot 58. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 - —view the call transcript.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image59.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image59.png" alt="—view the call transcript.">
+  <a class="screenshot-link" href="assets/source-guide/image59.png">
+    <img class="lab-screenshot" src="assets/source-guide/image59.png" alt="—view the call transcript.">
   </a>
   <figcaption>Source guide screenshot 59. Use the values assigned to your own lab pod.</figcaption>
 </figure>

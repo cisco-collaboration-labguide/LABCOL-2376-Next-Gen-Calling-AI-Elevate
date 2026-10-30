@@ -9,15 +9,15 @@ In this module we will import random/fake phone (DID) numbers to the Control Hub
 1. Within Workstation 1, open the Chrome browser from the taskbar.
 2. Go to the Webex Control Hub (https://admin.webex.com). Your pod’s Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. You will use the same credentials to login to the Control Hub and the Webex App for the user Charles Holland in this lab. Refer to the screenshots below.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image10.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image10.png" alt="Go to the Webex Control Hub (https://admin.webex.com). Your pod’s Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. Y">
+  <a class="screenshot-link" href="assets/source-guide/image10.png">
+    <img class="lab-screenshot" src="assets/source-guide/image10.png" alt="Go to the Webex Control Hub (https://admin.webex.com). Your pod’s Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. Y">
   </a>
   <figcaption>Source guide screenshot 10. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image11.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image11.png" alt="Go to the Webex Control Hub (https://admin.webex.com). Your pod’s Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. Y">
+  <a class="screenshot-link" href="assets/source-guide/image11.png">
+    <img class="lab-screenshot" src="assets/source-guide/image11.png" alt="Go to the Webex Control Hub (https://admin.webex.com). Your pod’s Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. Y">
   </a>
   <figcaption>Source guide screenshot 11. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -25,40 +25,40 @@ In this module we will import random/fake phone (DID) numbers to the Control Hub
 3. Log in to the Webex Control Hub with your respective pod’s credentials from the file and not using the screenshot credentials shown above.
 4. For security reasons, Webex Control Hub signs out every 20 minutes (Idle timeout) by default. For this lab, let’s make the idle time out longer so the Control Hub does not sign you out often during this lab. Go to MANAGEMENT > Organization Settings > Control Hub’s idle timeout. Drop down the option for Control Hub idle timeout and select 12 hours or no timeout. Click Save.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image12.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image12.png" alt="For security reasons, Webex Control Hub signs out every 20 minutes (Idle timeout) by default. For this lab, let’s make the idle time out longer so the Control Hub does not sign you">
+  <a class="screenshot-link" href="assets/source-guide/image12.png">
+    <img class="lab-screenshot" src="assets/source-guide/image12.png" alt="For security reasons, Webex Control Hub signs out every 20 minutes (Idle timeout) by default. For this lab, let’s make the idle time out longer so the Control Hub does not sign you">
   </a>
   <figcaption>Source guide screenshot 12. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 5. Go to SERVICES > PSTN & Routing. Click + Add Numbers.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image13.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image13.png" alt="Go to SERVICES &gt; PSTN &amp; Routing. Click + Add Numbers.">
+  <a class="screenshot-link" href="assets/source-guide/image13.png">
+    <img class="lab-screenshot" src="assets/source-guide/image13.png" alt="Go to SERVICES &gt; PSTN &amp; Routing. Click + Add Numbers.">
   </a>
   <figcaption>Source guide screenshot 13. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 6. On the Add Numbers page, drop down the option for Location and choose dCloud. Since we are setting up this location for the first time, first we need to select the PSTN Connection for this location. Click Edit PSTN.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image14.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image14.png" alt="On the Add Numbers page, drop down the option for Location and choose dCloud. Since we are setting up this location for the first time, first we need to select the PSTN Connection ">
+  <a class="screenshot-link" href="assets/source-guide/image14.png">
+    <img class="lab-screenshot" src="assets/source-guide/image14.png" alt="On the Add Numbers page, drop down the option for Location and choose dCloud. Since we are setting up this location for the first time, first we need to select the PSTN Connection ">
   </a>
   <figcaption>Source guide screenshot 14. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 7. You will be taken to Edit PSTN connection for dCloud (Location) and under the connection type choose Premises-based PSTN and click Next.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image15.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image15.png" alt="You will be taken to Edit PSTN connection for dCloud (Location) and under the connection type choose Premises-based PSTN and click Next.">
+  <a class="screenshot-link" href="assets/source-guide/image15.png">
+    <img class="lab-screenshot" src="assets/source-guide/image15.png" alt="You will be taken to Edit PSTN connection for dCloud (Location) and under the connection type choose Premises-based PSTN and click Next.">
   </a>
   <figcaption>Source guide screenshot 15. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 8. On the following page, drop down the option for Routing Choice and choose None. Even though None option is being shown as selected, you still have to click the dropdown option and choose None again. Select the checkbox for the confirmation and click Next.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image16.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image16.png" alt="On the following page, drop down the option for Routing Choice and choose None. Even though None option is being shown as selected, you still have to click the dropdown option and ">
+  <a class="screenshot-link" href="assets/source-guide/image16.png">
+    <img class="lab-screenshot" src="assets/source-guide/image16.png" alt="On the following page, drop down the option for Routing Choice and choose None. Even though None option is being shown as selected, you still have to click the dropdown option and ">
   </a>
   <figcaption>Source guide screenshot 16. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -68,8 +68,8 @@ In this module we will import random/fake phone (DID) numbers to the Control Hub
 NOTE: You will not face this issue of numbers being taken in production as you own the numbers from your Telco (phone company) provider for your organization.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image17.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image17.png" alt="NOTE: You will not face this issue of numbers being taken in production as you own the numbers from your Telco (phone company) provider for your organization.">
+  <a class="screenshot-link" href="assets/source-guide/image17.png">
+    <img class="lab-screenshot" src="assets/source-guide/image17.png" alt="NOTE: You will not face this issue of numbers being taken in production as you own the numbers from your Telco (phone company) provider for your organization.">
   </a>
   <figcaption>Source guide screenshot 17. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -77,32 +77,32 @@ NOTE: You will not face this issue of numbers being taken in production as you o
 11. Click Close on the following page and you will be taken to the Numbers page where you can see all the numbers you have just added.
 12. Now, let’s assign one of these numbers to the dCloud Location as the main number. On the Control Hub, go to MANAGEMENT > Locations.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image18.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image18.png" alt="Now, let’s assign one of these numbers to the dCloud Location as the main number. On the Control Hub, go to MANAGEMENT &gt; Locations.">
+  <a class="screenshot-link" href="assets/source-guide/image18.png">
+    <img class="lab-screenshot" src="assets/source-guide/image18.png" alt="Now, let’s assign one of these numbers to the dCloud Location as the main number. On the Control Hub, go to MANAGEMENT &gt; Locations.">
   </a>
   <figcaption>Source guide screenshot 18. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 13. Select the dCloud location. Go to the Calling tab, you will notice that under the Main Number field, there is a warning that reads You will not be able to make or receive calls until this number is added.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image19.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image19.png" alt="Select the dCloud location. Go to the Calling tab, you will notice that under the Main Number field, there is a warning that reads You will not be able to make or receive calls unt">
+  <a class="screenshot-link" href="assets/source-guide/image19.png">
+    <img class="lab-screenshot" src="assets/source-guide/image19.png" alt="Select the dCloud location. Go to the Calling tab, you will notice that under the Main Number field, there is a warning that reads You will not be able to make or receive calls unt">
   </a>
   <figcaption>Source guide screenshot 19. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 14. Drop down the option for Main Number and choose any of the numbers you have imported above and click Save.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image20.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image20.png" alt="Drop down the option for Main Number and choose any of the numbers you have imported above and click Save.">
+  <a class="screenshot-link" href="assets/source-guide/image20.png">
+    <img class="lab-screenshot" src="assets/source-guide/image20.png" alt="Drop down the option for Main Number and choose any of the numbers you have imported above and click Save.">
   </a>
   <figcaption>Source guide screenshot 20. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 15. As soon as you save, the warning will disappear, indicating now your location can make and receive calls.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image21.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image21.png" alt="As soon as you save, the warning will disappear, indicating now your location can make and receive calls.">
+  <a class="screenshot-link" href="assets/source-guide/image21.png">
+    <img class="lab-screenshot" src="assets/source-guide/image21.png" alt="As soon as you save, the warning will disappear, indicating now your location can make and receive calls.">
   </a>
   <figcaption>Source guide screenshot 21. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -114,8 +114,8 @@ NOTE: You will not face this issue of numbers being taken in production as you o
 3. Select Charles Holland user from the list of users.
 4. On the user Summary page scroll down and click Edit Licenses
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image22.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image22.png" alt="On the user Summary page scroll down and click Edit Licenses">
+  <a class="screenshot-link" href="assets/source-guide/image22.png">
+    <img class="lab-screenshot" src="assets/source-guide/image22.png" alt="On the user Summary page scroll down and click Edit Licenses">
   </a>
   <figcaption>Source guide screenshot 22. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -123,8 +123,8 @@ NOTE: You will not face this issue of numbers being taken in production as you o
 5. On the next page click Edit Licenses (towards the bottom right) again.
 6. On the next page go to the Calling tab and check mark for both options Webex Calling and Professional and Click Save.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image23.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image23.png" alt="On the next page go to the Calling tab and check mark for both options Webex Calling and Professional and Click Save.">
+  <a class="screenshot-link" href="assets/source-guide/image23.png">
+    <img class="lab-screenshot" src="assets/source-guide/image23.png" alt="On the next page go to the Calling tab and check mark for both options Webex Calling and Professional and Click Save.">
   </a>
   <figcaption>Source guide screenshot 23. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -133,16 +133,16 @@ NOTE: You will not face this issue of numbers being taken in production as you o
 NOTE: Note the PSTN Number you have assigned to Charles Holland in a text file. You will need this number later in the lab.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image24.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image24.png" alt="NOTE: Note the PSTN Number you have assigned to Charles Holland in a text file. You will need this number later in the lab.">
+  <a class="screenshot-link" href="assets/source-guide/image24.png">
+    <img class="lab-screenshot" src="assets/source-guide/image24.png" alt="NOTE: Note the PSTN Number you have assigned to Charles Holland in a text file. You will need this number later in the lab.">
   </a>
   <figcaption>Source guide screenshot 24. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 8. You will be taken back to the user Summary page. Notice that under Licenses, now Webex Calling Professional has been added for the Calling service.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image25.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image25.png" alt="You will be taken back to the user Summary page. Notice that under Licenses, now Webex Calling Professional has been added for the Calling service.">
+  <a class="screenshot-link" href="assets/source-guide/image25.png">
+    <img class="lab-screenshot" src="assets/source-guide/image25.png" alt="You will be taken back to the user Summary page. Notice that under Licenses, now Webex Calling Professional has been added for the Calling service.">
   </a>
   <figcaption>Source guide screenshot 25. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -155,8 +155,8 @@ Before users can experience the capabilities of AI-driven collaboration, adminis
 1. Go to ‘Management > Organization Settings > Cisco AI Assistant & AI features’. Click on Customize AI Assistant & AI features as shown below.
 2. Ensure ALL the toggles are turned ON for the Calling AI features. Click ‘Save’
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image26.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image26.png" alt="Ensure ALL the toggles are turned ON for the Calling AI features. Click ‘Save’">
+  <a class="screenshot-link" href="assets/source-guide/image26.png">
+    <img class="lab-screenshot" src="assets/source-guide/image26.png" alt="Ensure ALL the toggles are turned ON for the Calling AI features. Click ‘Save’">
   </a>
   <figcaption>Source guide screenshot 26. Use the values assigned to your own lab pod.</figcaption>
 </figure>

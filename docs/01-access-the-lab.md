@@ -13,15 +13,15 @@ AnyConnect (Cisco Secure Client) Username: v2384user1
 AnyConnect (Cisco Secure Client) Password: f001db
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image4.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image4.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
+  <a class="screenshot-link" href="assets/source-guide/image4.png">
+    <img class="lab-screenshot" src="assets/source-guide/image4.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
   </a>
   <figcaption>Source guide screenshot 4. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image5.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image5.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
+  <a class="screenshot-link" href="assets/source-guide/image5.png">
+    <img class="lab-screenshot" src="assets/source-guide/image5.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
   </a>
   <figcaption>Source guide screenshot 5. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -33,15 +33,15 @@ Continue to next step after connecting to the pod via the Cisco Secure Client.
 Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image6.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image6.png" alt="Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect">
+  <a class="screenshot-link" href="assets/source-guide/image6.png">
+    <img class="lab-screenshot" src="assets/source-guide/image6.png" alt="Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect">
   </a>
   <figcaption>Source guide screenshot 6. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image7.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image7.png" alt="Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect">
+  <a class="screenshot-link" href="assets/source-guide/image7.png">
+    <img class="lab-screenshot" src="assets/source-guide/image7.png" alt="Connect to the Remote desktop of Workstation 1. On your session topology click workstation 1 and click Remote Desktop to connect">
   </a>
   <figcaption>Source guide screenshot 7. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -49,8 +49,8 @@ Connect to the Remote desktop of Workstation 1. On your session topology click w
 Within Workstation 1’s Desktop, there will be a file named WEBEX_PASSWORD.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaboration Control Hub for this lab.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image8.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image8.png" alt="Within Workstation 1’s Desktop, there will be a file named WEBEX_PASSWORD.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaborati">
+  <a class="screenshot-link" href="assets/source-guide/image8.png">
+    <img class="lab-screenshot" src="assets/source-guide/image8.png" alt="Within Workstation 1’s Desktop, there will be a file named WEBEX_PASSWORD.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaborati">
   </a>
   <figcaption>Source guide screenshot 8. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -74,8 +74,8 @@ Control Hub Username: cholland@&lt;FQDN&gt; above. In our example, it will be ch
 Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud6435!
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image9.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image9.png" alt="Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud6435!">
+  <a class="screenshot-link" href="assets/source-guide/image9.png">
+    <img class="lab-screenshot" src="assets/source-guide/image9.png" alt="Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud6435!">
   </a>
   <figcaption>Source guide screenshot 9. Use the values assigned to your own lab pod.</figcaption>
 </figure>

@@ -13,8 +13,8 @@ Certificate-based trunk
 In this lab, we will cover only Registration-based Trunk.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image28.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image28.png" alt="In this lab, we will cover only Registration-based Trunk.">
+  <a class="screenshot-link" href="assets/source-guide/image28.png">
+    <img class="lab-screenshot" src="assets/source-guide/image28.png" alt="In this lab, we will cover only Registration-based Trunk.">
   </a>
   <figcaption>Source guide screenshot 28. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -29,7 +29,7 @@ In this module there are sub modules that are CLI (Command Line Interface) based
 2. Right-click the file and select **Run with PowerShell**.
 
 <figure class="lab-figure">
-  <img src="../assets/local-gateway/01-run-trunk-script.png" alt="Right-click CL_Add_Trunk.ps1 and select Run with PowerShell">
+  <img src="assets/local-gateway/01-run-trunk-script.png" alt="Right-click CL_Add_Trunk.ps1 and select Run with PowerShell">
   <figcaption>Run the trunk-creation script from the Workstation 1 desktop.</figcaption>
 </figure>
 
@@ -46,17 +46,17 @@ The PowerShell script performs the **Add Trunk** operation in Control Hub and ge
 4. If the trunk or `CL_LGW_Config-Ready.txt` is missing, stop and check the PowerShell output before continuing.
 
 <figure class="lab-figure">
-  <img src="../assets/source-guide/image29.png" alt="Run the CL Add Trunk PowerShell script">
+  <img src="assets/source-guide/image29.png" alt="Run the CL Add Trunk PowerShell script">
   <figcaption>Run the supplied script; it creates the Control Hub trunk and generates the matching LGW configuration.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <img src="../assets/source-guide/image30.png" alt="PowerShell trunk creation output">
+  <img src="assets/source-guide/image30.png" alt="PowerShell trunk creation output">
   <figcaption>Wait for the automated trunk creation and configuration generation to finish.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <img src="../assets/source-guide/image31.png" alt="Generated Local Gateway configuration file">
+  <img src="assets/source-guide/image31.png" alt="Generated Local Gateway configuration file">
   <figcaption>Open the generated configuration file before connecting to the LGW.</figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ The PowerShell script performs the **Add Trunk** operation in Control Hub and ge
 4. You may ignore only the final save error shown after `copy run start`; do not ignore errors from the configuration commands.
 
 <figure class="lab-figure">
-  <img src="../assets/local-gateway/02-paste-lgw-config.png" alt="Generated LGW configuration selected in Notepad and pasted into an authenticated PuTTY session">
+  <img src="assets/local-gateway/02-paste-lgw-config.png" alt="Generated LGW configuration selected in Notepad and pasted into an authenticated PuTTY session">
   <figcaption>Copy the complete generated configuration and paste it into the authenticated LGW session. This supplied screenshot shows a sample pod address; use your assigned address.</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ The PowerShell script performs the **Add Trunk** operation in Control Hub and ge
 3. In the command output, confirm that the **reg** column reports `yes`. If it does not, recheck the pasted Voice Class Tenant and SIP profile configuration before continuing.
 
 <figure class="lab-figure">
-  <img src="../assets/local-gateway/03-verify-registration.png" alt="Output of show sip-ua register status with the registration status highlighted as yes">
+  <img src="assets/local-gateway/03-verify-registration.png" alt="Output of show sip-ua register status with the registration status highlighted as yes">
   <figcaption>The LGW is registered when the <strong>reg</strong> column shows <code>yes</code>.</figcaption>
 </figure>
 
@@ -105,8 +105,8 @@ Before we start to test the Local Gateway configuration, verify that the premise
 Navigate to Services > PSTN & Routing > Gateway Configuration > Trunk. Select the trunk that was added in the above module. On the fly-out window under Details click Trunk Info/Manage.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image32.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image32.png" alt="Navigate to Services &gt; PSTN &amp; Routing &gt; Gateway Configuration &gt; Trunk. Select the trunk that was added in the above module. On the fly-out window under Details click Trunk Info/Man">
+  <a class="screenshot-link" href="assets/source-guide/image32.png">
+    <img class="lab-screenshot" src="assets/source-guide/image32.png" alt="Navigate to Services &gt; PSTN &amp; Routing &gt; Gateway Configuration &gt; Trunk. Select the trunk that was added in the above module. On the fly-out window under Details click Trunk Info/Man">
   </a>
   <figcaption>Source guide screenshot 32. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -118,8 +118,8 @@ Once you have verified that the trunk status is online, you can assign this trun
 Let's create a Route Group, Go to SERVICES > PSTN & Routing > Gateway Configuration > Route Group tab. Select Create Route Group.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image33.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image33.png" alt="Let&#x27;s create a Route Group, Go to SERVICES &gt; PSTN &amp; Routing &gt; Gateway Configuration &gt; Route Group tab. Select Create Route Group.">
+  <a class="screenshot-link" href="assets/source-guide/image33.png">
+    <img class="lab-screenshot" src="assets/source-guide/image33.png" alt="Let&#x27;s create a Route Group, Go to SERVICES &gt; PSTN &amp; Routing &gt; Gateway Configuration &gt; Route Group tab. Select Create Route Group.">
   </a>
   <figcaption>Source guide screenshot 33. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -131,8 +131,8 @@ Name: dCloud-RG
 Trunks: Drop down the option and choose the only available trunk (dCloud-Auto)
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image34.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image34.png" alt="Trunks: Drop down the option and choose the only available trunk (dCloud-Auto)">
+  <a class="screenshot-link" href="assets/source-guide/image34.png">
+    <img class="lab-screenshot" src="assets/source-guide/image34.png" alt="Trunks: Drop down the option and choose the only available trunk (dCloud-Auto)">
   </a>
   <figcaption>Source guide screenshot 34. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -141,15 +141,15 @@ It will create the new Route Group dCloud-RG with the trunk.
 
 1. Now we can assign this Route Group to the location. Click Locations (hyperlink) on the pop-up window. Select the dCloud location under available locations. On the dCloud location page, go to the PSTN tab. On the PSTN tab click Manage (next to PSTN Configuration > PSTN connection).
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image35.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image35.png" alt="Now we can assign this Route Group to the location. Click Locations (hyperlink) on the pop-up window. Select the dCloud location under available locations. On the dCloud location p">
+  <a class="screenshot-link" href="assets/source-guide/image35.png">
+    <img class="lab-screenshot" src="assets/source-guide/image35.png" alt="Now we can assign this Route Group to the location. Click Locations (hyperlink) on the pop-up window. Select the dCloud location under available locations. On the dCloud location p">
   </a>
   <figcaption>Source guide screenshot 35. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image36.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image36.png" alt="Now we can assign this Route Group to the location. Click Locations (hyperlink) on the pop-up window. Select the dCloud location under available locations. On the dCloud location p">
+  <a class="screenshot-link" href="assets/source-guide/image36.png">
+    <img class="lab-screenshot" src="assets/source-guide/image36.png" alt="Now we can assign this Route Group to the location. Click Locations (hyperlink) on the pop-up window. Select the dCloud location under available locations. On the dCloud location p">
   </a>
   <figcaption>Source guide screenshot 36. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -157,8 +157,8 @@ It will create the new Route Group dCloud-RG with the trunk.
 On the following page drop down the option for Routing Choice and choose the Route Group you defined. In this lab guide, it's named: dCloud-RG. Checkmark the option to confirm that you understand the impact of these changes. Also notice that as soon as you select the route group from the list, it displays the trunks in that Route Group. Click Next. Click Done (add numbers later) on the following page.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image37.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image37.png" alt="On the following page drop down the option for Routing Choice and choose the Route Group you defined. In this lab guide, it&#x27;s named: dCloud-RG. Checkmark the option to confirm that">
+  <a class="screenshot-link" href="assets/source-guide/image37.png">
+    <img class="lab-screenshot" src="assets/source-guide/image37.png" alt="On the following page drop down the option for Routing Choice and choose the Route Group you defined. In this lab guide, it&#x27;s named: dCloud-RG. Checkmark the option to confirm that">
   </a>
   <figcaption>Source guide screenshot 37. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -168,15 +168,15 @@ Now just to make sure the trunk is assigned to the location, go to SERVICES > PS
 Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route group In Use.
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image38.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image38.png" alt="Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route">
+  <a class="screenshot-link" href="assets/source-guide/image38.png">
+    <img class="lab-screenshot" src="assets/source-guide/image38.png" alt="Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route">
   </a>
   <figcaption>Source guide screenshot 38. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image39.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image39.png" alt="Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route">
+  <a class="screenshot-link" href="assets/source-guide/image39.png">
+    <img class="lab-screenshot" src="assets/source-guide/image39.png" alt="Under the Trunk tab for the dCloud-Auto (or your trunk name) In Use column should show Yes as shown below. Similarly, if you go to Route Group tab, it will show the dCloud-RG route">
   </a>
   <figcaption>Source guide screenshot 39. Use the values assigned to your own lab pod.</figcaption>
 </figure>

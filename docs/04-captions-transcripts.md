@@ -15,15 +15,15 @@ In this lab, we will enable CC and call transcription for the user Charles Holla
 
 1. Continuing on Workstation 1, from the Chrome browser, you will sign in to Control Hub. Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. You will use the same credentials to login to the Control Hub and the Webex App for the user Charles Holland in this lab. Refer to the screenshots below.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image10.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image10.png" alt="Continuing on Workstation 1, from the Chrome browser, you will sign in to Control Hub. Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file ca">
+  <a class="screenshot-link" href="assets/source-guide/image10.png">
+    <img class="lab-screenshot" src="assets/source-guide/image10.png" alt="Continuing on Workstation 1, from the Chrome browser, you will sign in to Control Hub. Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file ca">
   </a>
   <figcaption>Source guide screenshot 10. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image11.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image11.png" alt="Continuing on Workstation 1, from the Chrome browser, you will sign in to Control Hub. Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file ca">
+  <a class="screenshot-link" href="assets/source-guide/image11.png">
+    <img class="lab-screenshot" src="assets/source-guide/image11.png" alt="Continuing on Workstation 1, from the Chrome browser, you will sign in to Control Hub. Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file ca">
   </a>
   <figcaption>Source guide screenshot 11. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -31,16 +31,16 @@ In this lab, we will enable CC and call transcription for the user Charles Holla
 2. Log in to the Webex Control Hub with your respective pod’s credentials from the file.
 3. Go to Management > Users. Select the user, Charles Holland. Then click on the Calling Tab
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image40.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image40.png" alt="Go to Management &gt; Users. Select the user, Charles Holland. Then click on the Calling Tab">
+  <a class="screenshot-link" href="assets/source-guide/image40.png">
+    <img class="lab-screenshot" src="assets/source-guide/image40.png" alt="Go to Management &gt; Users. Select the user, Charles Holland. Then click on the Calling Tab">
   </a>
   <figcaption>Source guide screenshot 40. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 4. Under User call experience, click In-call feature access and scroll to the Captions for Webex Calling section at the bottom of the page
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image41.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image41.png" alt="Under User call experience, click In-call feature access and scroll to the Captions for Webex Calling section at the bottom of the page">
+  <a class="screenshot-link" href="assets/source-guide/image41.png">
+    <img class="lab-screenshot" src="assets/source-guide/image41.png" alt="Under User call experience, click In-call feature access and scroll to the Captions for Webex Calling section at the bottom of the page">
   </a>
   <figcaption>Source guide screenshot 41. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -49,16 +49,16 @@ In this lab, we will enable CC and call transcription for the user Charles Holla
 6. By default, the Use location settings option is always selected. The user inherits the closed captions and call transcriptions settings from the location settings. If the Use location settings option is selected, then you can’t make any changes.
 7. Select Use custom settings to manually enable access for the use of Enable closed captions and the Enable call transcripts options. Click Save at the bottom right corner of the screen.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image42.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image42.png" alt="Select Use custom settings to manually enable access for the use of Enable closed captions and the Enable call transcripts options. Click Save at the bottom right corner of the scr">
+  <a class="screenshot-link" href="assets/source-guide/image42.png">
+    <img class="lab-screenshot" src="assets/source-guide/image42.png" alt="Select Use custom settings to manually enable access for the use of Enable closed captions and the Enable call transcripts options. Click Save at the bottom right corner of the scr">
   </a>
   <figcaption>Source guide screenshot 42. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 8. If you use the custom settings and click Save, a banner appears asking whether you want to override the location settings for captions, since the user inherits closed captions and call transcripts settings from the location settings.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image43.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image43.png" alt="If you use the custom settings and click Save, a banner appears asking whether you want to override the location settings for captions, since the user inherits closed captions and ">
+  <a class="screenshot-link" href="assets/source-guide/image43.png">
+    <img class="lab-screenshot" src="assets/source-guide/image43.png" alt="If you use the custom settings and click Save, a banner appears asking whether you want to override the location settings for captions, since the user inherits closed captions and ">
   </a>
   <figcaption>Source guide screenshot 43. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -67,23 +67,23 @@ In this lab, we will enable CC and call transcription for the user Charles Holla
 
 1. Continuing on Workstation 1, minimize all the applications on the Desktop and open the Webex app from the Desktop. Accept any End user License Agreement.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image44.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image44.png" alt="Continuing on Workstation 1, minimize all the applications on the Desktop and open the Webex app from the Desktop. Accept any End user License Agreement.">
+  <a class="screenshot-link" href="assets/source-guide/image44.png">
+    <img class="lab-screenshot" src="assets/source-guide/image44.png" alt="Continuing on Workstation 1, minimize all the applications on the Desktop and open the Webex app from the Desktop. Accept any End user License Agreement.">
   </a>
   <figcaption>Source guide screenshot 44. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 2. Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. You will use the same credentials to login to the Webex App for the user Charles Holland in this lab. Refer to the screenshots below.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image10.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image10.png" alt="Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. You will use the same credentials to login to the Webex App fo">
+  <a class="screenshot-link" href="assets/source-guide/image10.png">
+    <img class="lab-screenshot" src="assets/source-guide/image10.png" alt="Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. You will use the same credentials to login to the Webex App fo">
   </a>
   <figcaption>Source guide screenshot 10. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image11.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image11.png" alt="Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. You will use the same credentials to login to the Webex App fo">
+  <a class="screenshot-link" href="assets/source-guide/image11.png">
+    <img class="lab-screenshot" src="assets/source-guide/image11.png" alt="Your Webex organization’s credentials are placed on the Desktop of Workstation 1 in a file called WEBEX_PASSWORD.txt. You will use the same credentials to login to the Webex App fo">
   </a>
   <figcaption>Source guide screenshot 11. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -101,8 +101,8 @@ MELBOURNE: +61 3 9669 4000
 Cisco MELBOURNE: +61 3 9659 4200
 
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image45.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image45.png" alt="Cisco MELBOURNE: +61 3 9659 4200">
+  <a class="screenshot-link" href="assets/source-guide/image45.png">
+    <img class="lab-screenshot" src="assets/source-guide/image45.png" alt="Cisco MELBOURNE: +61 3 9659 4200">
   </a>
   <figcaption>Source guide screenshot 45. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -114,32 +114,32 @@ Cisco MELBOURNE: +61 3 9659 4200
 
 1. Redial the IVR number (+61284466000) if the call was previously disconnected.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image46.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image46.png" alt="Redial the IVR number (+61284466000) if the call was previously disconnected.">
+  <a class="screenshot-link" href="assets/source-guide/image46.png">
+    <img class="lab-screenshot" src="assets/source-guide/image46.png" alt="Redial the IVR number (+61284466000) if the call was previously disconnected.">
   </a>
   <figcaption>Source guide screenshot 46. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 2. Once the call connects, click on the Closed Caption [CC] button. Closed captions will be displayed as shown below.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image47.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image47.png" alt="Once the call connects, click on the Closed Caption [CC] button. Closed captions will be displayed as shown below.">
+  <a class="screenshot-link" href="assets/source-guide/image47.png">
+    <img class="lab-screenshot" src="assets/source-guide/image47.png" alt="Once the call connects, click on the Closed Caption [CC] button. Closed captions will be displayed as shown below.">
   </a>
   <figcaption>Source guide screenshot 47. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 3. Now click on the Transcript option as shown below.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image48.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image48.png" alt="Now click on the Transcript option as shown below.">
+  <a class="screenshot-link" href="assets/source-guide/image48.png">
+    <img class="lab-screenshot" src="assets/source-guide/image48.png" alt="Now click on the Transcript option as shown below.">
   </a>
   <figcaption>Source guide screenshot 48. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 4. The AI generated transcript of the call can be seen.
 <figure class="lab-figure">
-  <a class="screenshot-link" href="../assets/source-guide/image49.png">
-    <img class="lab-screenshot" src="../assets/source-guide/image49.png" alt="The AI generated transcript of the call can be seen.">
+  <a class="screenshot-link" href="assets/source-guide/image49.png">
+    <img class="lab-screenshot" src="assets/source-guide/image49.png" alt="The AI generated transcript of the call can be seen.">
   </a>
   <figcaption>Source guide screenshot 49. Use the values assigned to your own lab pod.</figcaption>
 </figure>
