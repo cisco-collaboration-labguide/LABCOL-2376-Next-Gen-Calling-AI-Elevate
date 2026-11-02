@@ -5,7 +5,7 @@ repo_url: https://github.com/cisco-collaboration-labguide/LABCOL-2376-Next-Gen-C
 edit_uri: edit/main/docs/
 theme:
   name: material
-  logo: assets/cisco-live-logo.png
+  logo: assets/cisco-header-logo.png
   favicon: assets/cisco-live-logo.png
   font: false
   palette:
