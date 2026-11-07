@@ -66,11 +66,11 @@ In this module we will import random/fake phone (DID) numbers to the Control Hub
 9. On the following page populate the information below and click Next. Use the email address as listed in the Session_Info.txt file that you used to login to the Collaboration Control Hub.
 10. First Name: Charles
 11. Last Name: Holland
-12. Email Address: cholland@<your pod’s FQDN>
-13. Confirm Email Address: cholland@<your pod’s FQDN>
+12. Email Address: cholland@`<your pod’s FQDN>`
+13. Confirm Email Address: cholland@`<your pod’s FQDN>`
 <figure class="lab-figure">
   <a class="screenshot-link" href="assets/source-guide/image17.png">
-    <img class="lab-screenshot" src="assets/source-guide/image17.png" alt="Confirm Email Address: cholland@&lt;your pod’s FQDN&gt;">
+    <img class="lab-screenshot" src="assets/source-guide/image17.png" alt="Confirm Email Address: cholland@``&lt;your pod’s FQDN&gt;``">
   </a>
   <figcaption>Source guide screenshot 17. Use the values assigned to your own lab pod.</figcaption>
 </figure>

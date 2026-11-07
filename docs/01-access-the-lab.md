@@ -69,7 +69,7 @@ DNS Address / FQDN of our Webex organization: cb357.dc-08.com
 
 Session ID: 342544
 
-Control Hub Username: cholland@&lt;FQDN&gt; above. In our example, it will be cholland@cb357.dc-08.com
+Control Hub Username: cholland@`<FQDN>` above. In our example, it will be cholland@cb357.dc-08.com
 
 Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud2544!
 

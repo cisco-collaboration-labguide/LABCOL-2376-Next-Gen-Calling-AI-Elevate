@@ -36,7 +36,7 @@ SAFE_TEXT_REPLACEMENTS: dict[int, str] = {}
 def clean(text: str) -> str:
     text = text.replace("\ufffd", "'")
     text = re.sub(r"\s+", " ", text).strip()
-    return text.replace("<FQDN>", "&lt;FQDN&gt;")
+    return re.sub(r"<([^<>]+)>", r"`<\1>`", text)
 
 
 def image_names(document: Document, paragraph) -> list[str]:
