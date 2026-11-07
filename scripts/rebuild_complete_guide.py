@@ -15,20 +15,19 @@ from docx import Document
 from docx.oxml.ns import qn
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path(r"C:\Users\joshutan\Downloads\CLMEL26 - LABCOL-2376 - Next-Gen Calling--AI-Elevate with Webex - Lab Guide (1).docx")
+SOURCE = Path(r"C:\Users\joshutan\Downloads\CLMEL26 - LABCOL-2376 - Next-Gen Calling--AI-Elevate with Webex - Lab Guide (2).docx")
 DOCS = ROOT / "docs"
 ASSETS = DOCS / "assets" / "source-guide"
 
 PAGE_RANGES = {
     "index.md": (19, 30),
     "01-access-the-lab.md": (31, 77),
-    "02-webex-calling-org.md": (77, 167),
-    "03-local-gateway.md": (167, 253),
-    "04-captions-transcripts.md": (253, 327),
-    "05-recording-summaries.md": (327, 372),
+    "02-webex-calling-org.md": (77, 185),
+    "04-captions-transcripts.md": (185, 254),
+    "05-recording-summaries.md": (254, 303),
 }
 
-BULLET_PARAGRAPHS = {25, 26, 260, 261, 262, 363, 364, 367}
+BULLET_PARAGRAPHS = {25, 26, 192, 193, 194}
 SKIP_PARAGRAPHS = {29}
 OMIT_IMAGES: set[str] = set()
 SAFE_TEXT_REPLACEMENTS: dict[int, str] = {}
@@ -46,14 +45,16 @@ def image_names(document: Document, paragraph) -> list[str]:
         rel_id = blip.get(qn("r:embed"))
         if rel_id and rel_id in document.part.rels:
             name = Path(str(document.part.rels[rel_id].target_ref)).name
-            if name == "image26.tmp":
-                name = "image26.png"
+            name_path = Path(name)
+            if name_path.suffix == ".tmp":
+                name = f"{name_path.stem}.png"
             names.append(name)
     return names
 
 
 def extract_images(document: Document) -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
+    referenced_names: set[str] = set()
     with ZipFile(SOURCE) as archive:
         for paragraph in document.paragraphs:
             for blip in paragraph._p.xpath(".//a:blip"):
@@ -61,12 +62,16 @@ def extract_images(document: Document) -> None:
                 if not rel_id or rel_id not in document.part.rels:
                     continue
                 source_name = Path(str(document.part.rels[rel_id].target_ref)).name
-                output_name = "image26.png" if source_name == "image26.tmp" else source_name
+                output_name = f"{Path(source_name).stem}.png" if Path(source_name).suffix == ".tmp" else source_name
                 if output_name in OMIT_IMAGES:
                     continue
+                referenced_names.add(output_name)
                 member = f"word/media/{source_name}"
                 with archive.open(member) as source, (ASSETS / output_name).open("wb") as target:
                     shutil.copyfileobj(source, target)
+    for stale_asset in ASSETS.iterdir():
+        if stale_asset.is_file() and stale_asset.name not in referenced_names:
+            stale_asset.unlink()
 
 
 def figure(name: str, context: str) -> str:
@@ -165,7 +170,6 @@ def render_page(document: Document, filename: str, start: int, end: int) -> str:
     lines: list[str] = []
     last_context = "Lab guide screenshot"
     first_heading = True
-    inserted_putty = False
     ordered_counter = 0
 
     if filename != "index.md":
@@ -179,11 +183,6 @@ def render_page(document: Document, filename: str, start: int, end: int) -> str:
         text = SAFE_TEXT_REPLACEMENTS.get(index, clean(paragraph.text))
         images = [name for name in image_names(document, paragraph) if name not in OMIT_IMAGES]
 
-        if filename == "03-local-gateway.md" and 185 <= index <= 209:
-            if not inserted_putty:
-                lines.extend([PUTTY_BLOCK.rstrip(), ""])
-                inserted_putty = True
-            continue
         if index in SKIP_PARAGRAPHS:
             continue
 
@@ -230,17 +229,17 @@ hide:
 <div class="lab-hero">
 <p class="eyebrow">CISCO LIVE MELBOURNE 2026 · LABCOL-2376 · HANDS-ON LAB</p>
 <h1>Next-Gen Calling<br>AI-Elevate with Webex</h1>
-<p class="hero-description">Configure Webex Calling and a Local Gateway, then experience AI-powered captions, transcripts, and recording summaries.</p>
+<p class="hero-description">Configure Webex Calling with Cisco Calling Plan, then experience AI-powered captions, transcripts, and recording summaries.</p>
 <p class="hero-authors">Hussain Ali and Omer Ilyas · Technical Marketing Engineers</p>
 <a class="hero-button" href="01-access-the-lab.html">Get started <span aria-hidden="true">→</span></a>
-<a class="hero-secondary" href="03-local-gateway.html">Go to the Local Gateway lab →</a>
+<a class="hero-secondary" href="02-webex-calling-org.html">Set up Cisco Calling Plan →</a>
 </div>
 
 ## Your lab journey
 
 <div class="journey-grid">
 <a class="journey-card" href="01-access-the-lab.html"><span class="card-number">01</span><h3>Get ready</h3><p>Connect to the lab environment, open Workstation 1, and locate your assigned credentials.</p><span>Access the lab →</span></a>
-<a class="journey-card" href="02-webex-calling-org.html"><span class="card-number">02</span><h3>Build the calling foundation</h3><p>Configure the Webex Calling organization, phone numbers, users, and the registration-based Local Gateway.</p><span>Organization and gateway →</span></a>
+<a class="journey-card" href="02-webex-calling-org.html"><span class="card-number">02</span><h3>Build the calling foundation</h3><p>Configure Cisco Calling Plan, order phone numbers, assign the location main number, and license the user.</p><span>Calling setup →</span></a>
 <a class="journey-card" href="04-captions-transcripts.html"><span class="card-number">03</span><h3>Experience Calling AI</h3><p>Test live captions, call transcripts, recording, and AI-generated recording summaries.</p><span>Captions and summaries →</span></a>
 </div>
 """

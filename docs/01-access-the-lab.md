@@ -8,20 +8,20 @@ Also note your session ID as displayed below. In the example below, following ar
 
 AnyConnect (Cisco Secure Client) Host: https://dcloud-syd-anyconnect.cisco.com
 
-AnyConnect (Cisco Secure Client) Username: v2384user1
+AnyConnect (Cisco Secure Client) Username: v385user1
 
-AnyConnect (Cisco Secure Client) Password: f001db
+AnyConnect (Cisco Secure Client) Password: 83aec0
 
 <figure class="lab-figure">
   <a class="screenshot-link" href="assets/source-guide/image4.png">
-    <img class="lab-screenshot" src="assets/source-guide/image4.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
+    <img class="lab-screenshot" src="assets/source-guide/image4.png" alt="AnyConnect (Cisco Secure Client) Password: 83aec0">
   </a>
   <figcaption>Source guide screenshot 4. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 <figure class="lab-figure">
   <a class="screenshot-link" href="assets/source-guide/image5.png">
-    <img class="lab-screenshot" src="assets/source-guide/image5.png" alt="AnyConnect (Cisco Secure Client) Password: f001db">
+    <img class="lab-screenshot" src="assets/source-guide/image5.png" alt="AnyConnect (Cisco Secure Client) Password: 83aec0">
   </a>
   <figcaption>Source guide screenshot 5. Use the values assigned to your own lab pod.</figcaption>
 </figure>
@@ -46,18 +46,18 @@ Connect to the Remote desktop of Workstation 1. On your session topology click w
   <figcaption>Source guide screenshot 7. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
-Within Workstation 1’s Desktop, there will be a file named WEBEX_PASSWORD.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaboration Control Hub for this lab.
+Within Workstation 1’s Desktop, there will be a file named Session_info.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaboration Control Hub for this lab.
 
 <figure class="lab-figure">
   <a class="screenshot-link" href="assets/source-guide/image8.png">
-    <img class="lab-screenshot" src="assets/source-guide/image8.png" alt="Within Workstation 1’s Desktop, there will be a file named WEBEX_PASSWORD.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaborati">
+    <img class="lab-screenshot" src="assets/source-guide/image8.png" alt="Within Workstation 1’s Desktop, there will be a file named Session_info.txt as shown above. Launch the file to get the username and password for the Webex App and the Collaboration">
   </a>
   <figcaption>Source guide screenshot 8. Use the values assigned to your own lab pod.</figcaption>
 </figure>
 
 ## Login to Collaboration Control Hub from within Workstation 1
 
-Lauch the Chrome browser from within workstation 1and go to https://admin.webex.com. Login using the credentials from the WEBEX_PASSWORD.txt file from the previous section. If you do not see the WEBEX_PASSWORD.txt file, follow the instructions below. Otherwise, begin Module 1 of this lab. All the lab tasks should be completed from within Workstation 1
+Lauch the Chrome browser from within workstation 1and go to https://admin.webex.com. Login using the credentials from the Session_info.txt file from the previous section. If you do not see the Session_info.txt file, follow the instructions below. Otherwise, begin Module 1 of this lab. All the lab tasks should be completed from within Workstation 1
 
 Now you can proceed with the lab modules.
 
@@ -65,17 +65,17 @@ Now you can proceed with the lab modules.
 
 Before we can proceed to login to Collaboration Control Hub, we need the DNS name, username, password, and session ID. Within the session details page, select DNS Address and copy the top level FQDN as displayed below. In the example below:
 
-DNS Address / FQDN of our Webex organization: cb120.dc-08.com
+DNS Address / FQDN of our Webex organization: cb357.dc-08.com
 
-Session ID: 326435
+Session ID: 342544
 
-Control Hub Username: cholland@&lt;FQDN&gt; above. In our example, it will be cholland@cb120.dc-08.com
+Control Hub Username: cholland@&lt;FQDN&gt; above. In our example, it will be cholland@cb357.dc-08.com
 
-Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud6435!
+Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud2544!
 
 <figure class="lab-figure">
   <a class="screenshot-link" href="assets/source-guide/image9.png">
-    <img class="lab-screenshot" src="assets/source-guide/image9.png" alt="Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud6435!">
+    <img class="lab-screenshot" src="assets/source-guide/image9.png" alt="Control Hub Password: dCloud + last 4 digits of the session ID + !. In our example it will be dCloud2544!">
   </a>
   <figcaption>Source guide screenshot 9. Use the values assigned to your own lab pod.</figcaption>
 </figure>
