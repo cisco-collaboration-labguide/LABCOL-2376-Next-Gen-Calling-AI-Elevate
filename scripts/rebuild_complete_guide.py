@@ -18,6 +18,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path(r"C:\Users\joshutan\Downloads\CLMEL26 - LABCOL-2376 - Next-Gen Calling--AI-Elevate with Webex - Lab Guide (3).docx")
 DOCS = ROOT / "docs"
 ASSETS = DOCS / "assets" / "source-guide"
+IMAGE_OVERRIDES = {
+    "image34.png": DOCS / "assets" / "overrides" / "module-1c-ai-assistant.png",
+}
 
 PAGE_RANGES = {
     "index.md": (19, 30),
@@ -72,6 +75,8 @@ def extract_images(document: Document) -> None:
     for stale_asset in ASSETS.iterdir():
         if stale_asset.is_file() and stale_asset.name not in referenced_names:
             stale_asset.unlink()
+    for output_name, override_path in IMAGE_OVERRIDES.items():
+        shutil.copyfile(override_path, ASSETS / output_name)
 
 
 def figure(name: str, context: str) -> str:
