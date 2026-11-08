@@ -17,7 +17,7 @@ hide:
 ## Your lab journey
 
 <div class="journey-grid">
-<a class="journey-card" href="01-access-the-lab.html"><span class="card-number">01</span><h3>Get ready</h3><p>Connect to the lab environment, open Workstation 1, and locate your assigned credentials.</p><span>Access the lab →</span></a>
+<a class="journey-card" href="01-access-the-lab.html"><span class="card-number">01</span><h3>Get ready</h3><p>Launch your assigned dCloud pod in eXPO, open Workstation 1, and locate your lab credentials.</p><span>Access the lab →</span></a>
 <a class="journey-card" href="02-webex-calling-org.html"><span class="card-number">02</span><h3>Build the calling foundation</h3><p>Configure Cisco Calling Plan, order phone numbers, assign the location main number, and license the user.</p><span>Calling setup →</span></a>
 <a class="journey-card" href="04-captions-transcripts.html"><span class="card-number">03</span><h3>Experience Calling AI</h3><p>Test live captions, call transcripts, recording, and AI-generated recording summaries.</p><span>Captions and summaries →</span></a>
 </div>

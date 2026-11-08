@@ -15,19 +15,19 @@ from docx import Document
 from docx.oxml.ns import qn
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path(r"C:\Users\joshutan\Downloads\CLMEL26 - LABCOL-2376 - Next-Gen Calling--AI-Elevate with Webex - Lab Guide (2).docx")
+SOURCE = Path(r"C:\Users\joshutan\Downloads\CLMEL26 - LABCOL-2376 - Next-Gen Calling--AI-Elevate with Webex - Lab Guide (3).docx")
 DOCS = ROOT / "docs"
 ASSETS = DOCS / "assets" / "source-guide"
 
 PAGE_RANGES = {
     "index.md": (19, 30),
-    "01-access-the-lab.md": (31, 77),
-    "02-webex-calling-org.md": (77, 185),
-    "04-captions-transcripts.md": (185, 254),
-    "05-recording-summaries.md": (254, 303),
+    "01-access-the-lab.md": (31, 62),
+    "02-webex-calling-org.md": (62, 170),
+    "04-captions-transcripts.md": (170, 239),
+    "05-recording-summaries.md": (239, 288),
 }
 
-BULLET_PARAGRAPHS = {25, 26, 192, 193, 194}
+BULLET_PARAGRAPHS = {25, 26, 177, 178, 179}
 SKIP_PARAGRAPHS = {29}
 OMIT_IMAGES: set[str] = set()
 SAFE_TEXT_REPLACEMENTS: dict[int, str] = {}
@@ -238,7 +238,7 @@ hide:
 ## Your lab journey
 
 <div class="journey-grid">
-<a class="journey-card" href="01-access-the-lab.html"><span class="card-number">01</span><h3>Get ready</h3><p>Connect to the lab environment, open Workstation 1, and locate your assigned credentials.</p><span>Access the lab →</span></a>
+<a class="journey-card" href="01-access-the-lab.html"><span class="card-number">01</span><h3>Get ready</h3><p>Launch your assigned dCloud pod in eXPO, open Workstation 1, and locate your lab credentials.</p><span>Access the lab →</span></a>
 <a class="journey-card" href="02-webex-calling-org.html"><span class="card-number">02</span><h3>Build the calling foundation</h3><p>Configure Cisco Calling Plan, order phone numbers, assign the location main number, and license the user.</p><span>Calling setup →</span></a>
 <a class="journey-card" href="04-captions-transcripts.html"><span class="card-number">03</span><h3>Experience Calling AI</h3><p>Test live captions, call transcripts, recording, and AI-generated recording summaries.</p><span>Captions and summaries →</span></a>
 </div>
